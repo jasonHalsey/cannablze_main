@@ -11,15 +11,15 @@ Version: 1.0.0
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600i,800i);
 @font-face {
   font-family: OpenSans-BoldItalic;
-  src: url("../fonts/OpenSans-BoldItalic.ttf");
+  src: url("fonts/OpenSans-BoldItalic.ttf");
 }
 @font-face {
   font-family: OpenSans-ExtraBoldItalic;
-  src: url("../fonts/OpenSans-ExtraBoldItalic.ttf");
+  src: url("fonts/OpenSans-ExtraBoldItalic.ttf");
 }
 @font-face {
   font-family: OpenSans-Regular;
-  src: url("../fonts/OpenSans-Regular.ttf");
+  src: url("fonts/OpenSans-Regular.ttf");
 }
 /* line 13, sass/partials/_monsinseth.scss */
 .Parent-container {
@@ -161,7 +161,7 @@ Version: 1.0.0
 
 /* line 113, sass/partials/_monsinseth.scss */
 .red-btn {
-  background-image: url("../images/redbutton-bg.png");
+  background-image: url("images/redbutton-bg.png");
   width: 391px;
   border: 0;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ Version: 1.0.0
 
 /* line 125, sass/partials/_monsinseth.scss */
 .red-btn:hover {
-  background-image: url("../images/hover-bg.png");
+  background-image: url("images/hover-bg.png");
   transition: all 0.5s ease;
 }
 
@@ -192,7 +192,7 @@ Version: 1.0.0
 
 /* line 136, sass/partials/_monsinseth.scss */
 .services {
-  background-image: url(../images/sbg.png);
+  background-image: url(images/sbg.png);
   display: table;
   width: 100%;
   height: 146px;
@@ -220,7 +220,7 @@ Version: 1.0.0
 
 /* line 156, sass/partials/_monsinseth.scss */
 .service2 {
-  background-image: url("../images/sbg2.png");
+  background-image: url("images/sbg2.png");
   display: table;
   width: 100%;
   margin-top: 1%;
@@ -248,7 +248,7 @@ Version: 1.0.0
 
 /* line 176, sass/partials/_monsinseth.scss */
 .service3 {
-  background-image: url("../images/sbg3.png");
+  background-image: url("images/sbg3.png");
   display: table;
   width: 100%;
   margin-top: 1%;
@@ -371,7 +371,7 @@ Version: 1.0.0
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url(images/loader.gif) center no-repeat #fff;
 }
 
 @media (min-width: 768px) {
@@ -546,7 +546,7 @@ Version: 1.0.0
   .Deeper {
     margin: 19px 0px 0px 0;
     width: 100%;
-    background-image: url("../images/sbg-mb.png");
+    background-image: url("images/sbg-mb.png");
   }
 
   /* line 376, sass/partials/_monsinseth.scss */
@@ -655,5 +655,67 @@ Version: 1.0.0
     margin-right: auto;
     display: table;
     margin-top: 8px;
+  }
+}
+/* line 3, sass/partials/_home.scss */
+.fourth-portion div p, .third-portion div p {
+  line-height: 1.95 !important;
+}
+
+/* line 1, sass/partials/_header.scss */
+.navbar-default {
+  background: #686868;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #686868 37%, #151515 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #686868 37%, #151515 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #686868 37%, #151515 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#151515',GradientType=0 );
+  /* IE6-9 */
+  padding-bottom: 1.0em;
+}
+
+/* line 9, sass/partials/_header.scss */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0 !important;
+  border: 1px solid transparent;
+}
+
+/* line 16, sass/partials/_header.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 2.0em;
+  font-weight: 400;
+}
+
+/* line 23, sass/partials/_header.scss */
+li.header-btn {
+  text-align: right;
+  margin-bottom: 1.0em;
+}
+/* line 26, sass/partials/_header.scss */
+li.header-btn > button {
+  font-size: 1.0em;
+}
+
+/* line 30, sass/partials/_header.scss */
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 30px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  /* line 38, sass/partials/_header.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding: 2px 18px 2px 0px;
   }
 }
